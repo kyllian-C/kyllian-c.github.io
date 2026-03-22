@@ -941,25 +941,25 @@
         <!-- SOON -->
         <div class="project-card reveal" data-cat="soon">
           <div class="project-status status-soon"><div class="status-dot"></div>Prévu</div>
-          <div class="project-title"></div>
-          <div class="project-desc"></div>
+          <div class="project-title">API REST PHP</div>
+          <div class="project-desc">Création d'une API RESTful en PHP avec authentification JWT, gestion des rôles, et documentation Swagger. Projet personnel pour approfondir les architectures back-end.</div>
           <div class="project-tech">
-            <span></span><span></span><span></span><span></span>
+            <span>PHP</span><span>MySQL</span><span>JWT</span><span>REST</span>
           </div>
           <div class="project-links">
-            <a href="#" class="proj-link disabled">Projet Futur</a>
+            <a href="#" class="proj-link disabled">⌀ En développement</a>
           </div>
         </div>
 
         <div class="project-card reveal" data-cat="soon">
           <div class="project-status status-soon"><div class="status-dot"></div>Prévu</div>
-          <div class="project-title"></div>
-          <div class="project-desc"></div>
+          <div class="project-title">App Mobile (Flutter)</div>
+          <div class="project-desc">Exploration de Flutter pour développer une application mobile cross-platform. Objectif : apprendre le développement mobile et élargir mon stack technique.</div>
           <div class="project-tech">
-            <span></span><span></span><span></span>
+            <span>Flutter</span><span>Dart</span><span>Firebase</span>
           </div>
           <div class="project-links">
-            <a href="#" class="proj-link disabled">Projet Futur</a>
+            <a href="#" class="proj-link disabled">⌀ Planifié</a>
           </div>
         </div>
 
@@ -1064,7 +1064,7 @@
             <div class="contact-icon">📍</div>
             <div>
               <div class="contact-label">Localisation</div>
-              <div class="contact-val">Mont-Saint-Aignan</div>
+              <div class="contact-val">65 rue Maréchal de Lattre de Tassigny, Mont-Saint-Aignan</div>
             </div>
           </div>
           <div class="contact-item">
@@ -1156,9 +1156,10 @@
     });
 
     // REVEAL ON SCROLL
+    document.querySelectorAll('.reveal').forEach(el => el.classList.add('visible'));
     const observer = new IntersectionObserver(entries => {
       entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
-    }, { threshold: .12 });
+    }, { threshold: 0 });
     document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
     // SKILL BARS
